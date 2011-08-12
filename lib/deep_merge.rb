@@ -1,2 +1,1 @@
-require 'deep_merge/core'
-require 'deep_merge/deep_merge_hash'
+require 'deep_merge/rails_compat'
