@@ -5,7 +5,7 @@ Gem::Specification.new do |s|
   s.version = "1.0.0"
 
   s.authors = ["Steve Midgley"]
-  s.date = %q{2011-07-28}
+  s.date = %q{2011-08-12}
   s.description = %q{Recursively merge hashes. Now works with Ruby 1.9 and ActiveSupport}
   s.email = %q{dan@kallistec.com}
   s.extra_rdoc_files = [
@@ -18,11 +18,10 @@ Gem::Specification.new do |s|
     "VERSION",
     "lib/deep_merge.rb",
     "lib/deep_merge/core.rb",
-    "lib/deep_merge/deep_merge_hash.rb",
     "lib/deep_merge/rails_compat.rb",
     "test/test_deep_merge.rb"
   ]
-  s.homepage = %q{http://github.com/danielsdeleo/deep_merge}
+  s.homepage = %q{http://github.com/kmile/deep_merge}
   s.require_paths = ["lib"]
   s.summary = %q{Merge Deeply Nested Hashes}
   s.test_files = [

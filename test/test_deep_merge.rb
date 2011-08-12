@@ -22,20 +22,20 @@ class TestDeepMerge < Test::Unit::TestCase
   #   deep_merge # skips unmergeable
   def test_hash_deep_merge
     x = {}
-    assert x.respond_to?('deep_merge!'.to_sym)
+    assert x.respond_to?('deeper_merge!'.to_sym)
     hash_src  = {'id' => [3,4,5]}
     hash_dest = {'id' => [1,2,3]}
-    assert hash_dest.ko_deep_merge!(hash_src)
+    assert hash_dest.ko_deeper_merge!(hash_src)
     assert_equal({'id' => [1,2,3,4,5]}, hash_dest)
 
     hash_src  = {'id' => [3,4,5]}
     hash_dest = {'id' => [1,2,3]}
-    assert hash_dest.deep_merge!(hash_src)
+    assert hash_dest.deeper_merge!(hash_src)
     assert_equal({'id' => [1,2,3,4,5]}, hash_dest)
 
     hash_src  = {'id' => 'xxx'}
     hash_dest = {'id' => [1,2,3]}
-    assert hash_dest.deep_merge(hash_src)
+    assert hash_dest.deeper_merge(hash_src)
     assert_equal({'id' => [1,2,3]}, hash_dest)
   end
 
